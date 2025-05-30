@@ -12,7 +12,7 @@
             "atomType": "Output",
             "name": "Output",
             "x": 0.8306709265175719,
-            "y": 0.6239168110918544,
+            "y": 0.6291161178509532,
             "uniqueID": 1748621927066,
             "ioValues": [
                 {
@@ -34,12 +34,8 @@
                     "ioValue": 1748638638263
                 },
                 {
-                    "name": "Shape 14",
-                    "ioValue": 1748638720553
-                },
-                {
-                    "name": "Shape 15",
-                    "ioValue": 1748640419750
+                    "name": "Shape 16",
+                    "ioValue": 1748640674058
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
@@ -57,8 +53,8 @@
         {
             "atomType": "Constant",
             "name": "BoltDiameter",
-            "x": 0.0314924691921497,
-            "y": 0.3951473136915078,
+            "x": 0.03057964399817435,
+            "y": 0.30155979202772965,
             "uniqueID": 1748637132232,
             "ioValues": [],
             "description": "Defines a mathematical constant.",
@@ -67,8 +63,8 @@
         {
             "atomType": "Constant",
             "name": "BracketHeight",
-            "x": 0.030589293747188488,
-            "y": 0.7611940298507462,
+            "x": 0.02738475581926061,
+            "y": 0.5424610051993067,
             "uniqueID": 1748637386320,
             "ioValues": [],
             "description": "Defines a mathematical constant.",
@@ -77,8 +73,8 @@
         {
             "atomType": "Constant",
             "name": "BracketLength",
-            "x": 0.027841168416248285,
-            "y": 0.5892547660311959,
+            "x": 0.02738475581926061,
+            "y": 0.4263431542461005,
             "uniqueID": 1748637391369,
             "ioValues": [],
             "description": "Defines a mathematical constant.",
@@ -87,8 +83,8 @@
         {
             "atomType": "Constant",
             "name": "Fillet",
-            "x": 0.030139451192082767,
-            "y": 0.9168443496801707,
+            "x": 0.025559105431309903,
+            "y": 0.6672443674176777,
             "uniqueID": 1748637395943,
             "ioValues": [],
             "description": "Defines a mathematical constant.",
@@ -97,8 +93,8 @@
         {
             "atomType": "Equation",
             "name": "x - y",
-            "x": 0.15015974440894567,
-            "y": 0.6741767764298094,
+            "x": 0.1478776814240073,
+            "y": 0.6533795493934141,
             "uniqueID": 1748637899544,
             "ioValues": [
                 {
@@ -142,8 +138,8 @@
         {
             "atomType": "Equation",
             "name": "x - y",
-            "x": 0.16339570972158832,
-            "y": 0.4991334488734835,
+            "x": 0.14833409402099498,
+            "y": 0.4974003466204506,
             "uniqueID": 1748638420025,
             "ioValues": [
                 {
@@ -281,8 +277,8 @@
         {
             "atomType": "Molecule",
             "name": "BoltHole",
-            "x": 0.446371519853948,
-            "y": 0.6464471403812825,
+            "x": 0.4536741214057508,
+            "y": 0.6239168110918544,
             "uniqueID": 1748638720553,
             "ioValues": [
                 {
@@ -512,8 +508,8 @@
         {
             "atomType": "Molecule",
             "name": "RegisteredCircle",
-            "x": 0.22866271109082612,
-            "y": 0.29809358752166376,
+            "x": 0.22592423550890006,
+            "y": 0.3292894280762565,
             "uniqueID": 1748639593569,
             "ioValues": [
                 {
@@ -1079,7 +1075,7 @@
         },
         {
             "atomType": "Equation",
-            "name": "x - 1.35",
+            "name": "x - y",
             "x": 0.23368324965769055,
             "y": 0.9376083188908146,
             "uniqueID": 1748640325867,
@@ -1087,10 +1083,14 @@
                 {
                     "name": "x",
                     "ioValue": 8
+                },
+                {
+                    "name": "y",
+                    "ioValue": 1.35
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "x - 1.35"
+            "currentEquation": "x - y"
         },
         {
             "atomType": "Molecule",
@@ -1201,8 +1201,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.42172523961661346,
-                    "y": 0.5667244367417678,
+                    "x": 0.42218165221360116,
+                    "y": 0.5476603119584056,
                     "uniqueID": 1748640420485,
                     "ioValues": [
                         {
@@ -1307,6 +1307,34 @@
             ],
             "fileTypeVersion": 1,
             "compiledBom": []
+        },
+        {
+            "atomType": "Constant",
+            "name": "Bolt Offset",
+            "x": 0.029666818804198997,
+            "y": 0.9202772963604853,
+            "uniqueID": 1748640600056,
+            "ioValues": [],
+            "description": "Defines a mathematical constant.",
+            "value": 1.35
+        },
+        {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.5125513464171612,
+            "y": 0.7053726169844021,
+            "uniqueID": 1748640674058,
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": 1748638720553
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": 1748640419750
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
         }
     ],
     "allConnectors": [
@@ -1487,10 +1515,10 @@
         },
         {
             "ap1Name": "Geometry",
-            "ap2Name": "Shape 14",
+            "ap2Name": "Shape 1",
             "ap2Primary": false,
             "ap1ID": 1748638720553,
-            "ap2ID": 1748622525983
+            "ap2ID": 1748640674058
         },
         {
             "ap1Name": "result",
@@ -1543,9 +1571,30 @@
         },
         {
             "ap1Name": "Geometry",
-            "ap2Name": "Shape 15",
+            "ap2Name": "Shape 2",
             "ap2Primary": false,
             "ap1ID": 1748640419750,
+            "ap2ID": 1748640674058
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "y",
+            "ap2Primary": false,
+            "ap1ID": 1748640600056,
+            "ap2ID": 1748640325867
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "Y",
+            "ap2Primary": false,
+            "ap1ID": 1748640600056,
+            "ap2ID": 1748638720553
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 16",
+            "ap2Primary": false,
+            "ap1ID": 1748640674058,
             "ap2ID": 1748622525983
         }
     ],
