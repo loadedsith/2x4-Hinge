@@ -11,8 +11,8 @@
         {
             "atomType": "Output",
             "name": "Output",
-            "x": 0.83888635326335,
-            "y": 0.6273830155979202,
+            "x": 0.8306709265175719,
+            "y": 0.6239168110918544,
             "uniqueID": 1748621927066,
             "ioValues": [
                 {
@@ -187,8 +187,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.4299406663623916,
-            "y": 0.462738301559792,
+            "x": 0.16522136010953903,
+            "y": 0.08838821490467937,
             "uniqueID": 1748638499578,
             "ioValues": [
                 {
@@ -281,8 +281,8 @@
         {
             "atomType": "Molecule",
             "name": "BoltHole",
-            "x": 0.39434048379735276,
-            "y": 0.7140381282495668,
+            "x": 0.446371519853948,
+            "y": 0.6464471403812825,
             "uniqueID": 1748638720553,
             "ioValues": [
                 {
@@ -497,28 +497,13 @@
         {
             "atomType": "Equation",
             "name": "x / 2",
-            "x": 0.23459607485166592,
-            "y": 0.68630849220104,
+            "x": 0.2701962574167047,
+            "y": 0.7642980935875217,
             "uniqueID": 1748639266098,
             "ioValues": [
                 {
                     "name": "x",
                     "ioValue": 3.5
-                }
-            ],
-            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "x / 2"
-        },
-        {
-            "atomType": "Equation",
-            "name": "x / 2",
-            "x": 0.23413966225467825,
-            "y": 0.8388214904679376,
-            "uniqueID": 1748639537772,
-            "ioValues": [
-                {
-                    "name": "x",
-                    "ioValue": 1
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -1110,8 +1095,8 @@
         {
             "atomType": "Molecule",
             "name": "BoltHole",
-            "x": 0.46052031036056595,
-            "y": 0.8648180242634316,
+            "x": 0.4550433591967138,
+            "y": 0.8630849220103987,
             "uniqueID": 1748640419750,
             "ioValues": [
                 {
@@ -1348,10 +1333,24 @@
         },
         {
             "ap1Name": "number",
+            "ap2Name": "Z",
+            "ap2Primary": false,
+            "ap1ID": 1748636407559,
+            "ap2ID": 1748640419750
+        },
+        {
+            "ap1Name": "number",
             "ap2Name": "Diameter",
             "ap2Primary": false,
             "ap1ID": 1748637132232,
             "ap2ID": 1748638720553
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "Diameter",
+            "ap2Primary": false,
+            "ap1ID": 1748637132232,
+            "ap2ID": 1748640419750
         },
         {
             "ap1Name": "number",
@@ -1380,13 +1379,6 @@
             "ap2Primary": false,
             "ap1ID": 1748637391369,
             "ap2ID": 1748640325867
-        },
-        {
-            "ap1Name": "number",
-            "ap2Name": "x",
-            "ap2Primary": false,
-            "ap1ID": 1748637395943,
-            "ap2ID": 1748639537772
         },
         {
             "ap1Name": "number",
@@ -1506,6 +1498,13 @@
             "ap2Primary": false,
             "ap1ID": 1748639266098,
             "ap2ID": 1748638720553
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "X",
+            "ap2Primary": false,
+            "ap1ID": 1748639266098,
+            "ap2ID": 1748640419750
         },
         {
             "ap1Name": "Geometry",
