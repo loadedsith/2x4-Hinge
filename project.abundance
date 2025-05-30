@@ -25,8 +25,8 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.26720647773279355,
-            "y": 0.1044776119402985,
+            "x": 0.2078272604588394,
+            "y": 0.2537313432835821,
             "uniqueID": 1748621950207,
             "ioValues": [
                 {
@@ -119,8 +119,8 @@
         {
             "atomType": "Color",
             "name": "Color",
-            "x": 0.47908232118758437,
-            "y": 0.6865671641791045,
+            "x": 0.5,
+            "y": 0.6644295302013423,
             "uniqueID": 1748622499179,
             "ioValues": [
                 {
@@ -218,8 +218,8 @@
         {
             "atomType": "Color",
             "name": "Color",
-            "x": 0.48268106162843005,
-            "y": 0.8827292110874201,
+            "x": 0.509837962962963,
+            "y": 0.8791946308724832,
             "uniqueID": 1748622682012,
             "ioValues": [
                 {
@@ -295,7 +295,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 0
+                    "ioValue": 0.75
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -303,8 +303,8 @@
         {
             "atomType": "Constant",
             "name": "MatThick",
-            "x": 0.0346378767431399,
-            "y": 0.17697228144989338,
+            "x": 0.06657669815564553,
+            "y": 0.24307036247334757,
             "uniqueID": 1748636407559,
             "ioValues": [],
             "description": "Defines a mathematical constant.",
@@ -313,8 +313,8 @@
         {
             "atomType": "Rotate",
             "name": "Rotate",
-            "x": 0.20197930724246513,
-            "y": 0.4349680170575693,
+            "x": 0.20107962213225372,
+            "y": 0.48614072494669514,
             "uniqueID": 1748636566461,
             "ioValues": [
                 {
@@ -327,7 +327,7 @@
                 },
                 {
                     "name": "y-axis degrees",
-                    "ioValue": 180
+                    "ioValue": 0
                 },
                 {
                     "name": "z-axis degrees",
@@ -339,26 +339,124 @@
         {
             "atomType": "Constant",
             "name": "BoltDiameter",
-            "x": 0.02968960863697706,
-            "y": 0.7633262260127931,
+            "x": 0.04453441295546559,
+            "y": 0.4221748400852879,
             "uniqueID": 1748637132232,
             "ioValues": [],
             "description": "Defines a mathematical constant.",
             "value": 0.375
         },
         {
+            "atomType": "Constant",
+            "name": "BracketHeight",
+            "x": 0.030589293747188488,
+            "y": 0.7611940298507462,
+            "uniqueID": 1748637386320,
+            "ioValues": [],
+            "description": "Defines a mathematical constant.",
+            "value": 3.5
+        },
+        {
+            "atomType": "Constant",
+            "name": "BracketLength",
+            "x": 0.03643724696356276,
+            "y": 0.6012793176972282,
+            "uniqueID": 1748637391369,
+            "ioValues": [],
+            "description": "Defines a mathematical constant.",
+            "value": 8
+        },
+        {
+            "atomType": "Constant",
+            "name": "Fillet",
+            "x": 0.030139451192082767,
+            "y": 0.9168443496801707,
+            "uniqueID": 1748637395943,
+            "ioValues": [],
+            "description": "Defines a mathematical constant.",
+            "value": 1
+        },
+        {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.4763832658569501,
-            "y": 0.2345415778251599,
-            "uniqueID": 1748637204759,
+            "x": 0.2154267457781835,
+            "y": 0.09532062391681109,
+            "uniqueID": 1748637522980,
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 10
+                    "ioValue": 1
                 }
             ],
             "description": "Creates a new circle."
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.2665449566408033,
+            "y": 0.19410745233968804,
+            "uniqueID": 1748637530338,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 1
+                }
+            ],
+            "description": "Creates a new circle."
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.32222729347329987,
+            "y": 0.07452339688041594,
+            "uniqueID": 1748637531319,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 1
+                }
+            ],
+            "description": "Creates a new circle."
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.2660885440438156,
+            "y": 0.043327556325823226,
+            "uniqueID": 1748637535131,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 1
+                }
+            ],
+            "description": "Creates a new circle."
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.4376996805111821,
+            "y": 0.1265164644714038,
+            "uniqueID": 1748637555562,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1748637531319
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 8
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
         }
     ],
     "allConnectors": [
@@ -489,6 +587,13 @@
             "ap2ID": 1748622156066
         },
         {
+            "ap1Name": "number",
+            "ap2Name": "zDist",
+            "ap2Primary": false,
+            "ap1ID": 1748636407559,
+            "ap2ID": 1748636382269
+        },
+        {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
@@ -508,6 +613,62 @@
             "ap2Primary": false,
             "ap1ID": 1748637132232,
             "ap2ID": 1748622656735
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "y length",
+            "ap2Primary": false,
+            "ap1ID": 1748637386320,
+            "ap2ID": 1748621950207
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "x length",
+            "ap2Primary": false,
+            "ap1ID": 1748637391369,
+            "ap2ID": 1748621950207
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "xDist",
+            "ap2Primary": false,
+            "ap1ID": 1748637391369,
+            "ap2ID": 1748637555562
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "diameter",
+            "ap2Primary": false,
+            "ap1ID": 1748637395943,
+            "ap2ID": 1748637522980
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "diameter",
+            "ap2Primary": false,
+            "ap1ID": 1748637395943,
+            "ap2ID": 1748637535131
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "diameter",
+            "ap2Primary": false,
+            "ap1ID": 1748637395943,
+            "ap2ID": 1748637530338
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "diameter",
+            "ap2Primary": false,
+            "ap1ID": 1748637395943,
+            "ap2ID": 1748637531319
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1748637531319,
+            "ap2ID": 1748637555562
         }
     ],
     "unitsKey": "Inches",
