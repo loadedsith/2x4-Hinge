@@ -25,8 +25,8 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.2078272604588394,
-            "y": 0.2537313432835821,
+            "x": 0.26720647773279355,
+            "y": 0.1044776119402985,
             "uniqueID": 1748621950207,
             "ioValues": [
                 {
@@ -119,8 +119,8 @@
         {
             "atomType": "Color",
             "name": "Color",
-            "x": 0.5,
-            "y": 0.6644295302013423,
+            "x": 0.47908232118758437,
+            "y": 0.6865671641791045,
             "uniqueID": 1748622499179,
             "ioValues": [
                 {
@@ -160,8 +160,8 @@
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.11875843454790824,
-            "y": 0.8635394456289978,
+            "x": 0.11830859199280251,
+            "y": 0.8742004264392325,
             "uniqueID": 1748622656735,
             "ioValues": [
                 {
@@ -218,8 +218,8 @@
         {
             "atomType": "Color",
             "name": "Color",
-            "x": 0.509837962962963,
-            "y": 0.8791946308724832,
+            "x": 0.48268106162843005,
+            "y": 0.8827292110874201,
             "uniqueID": 1748622682012,
             "ioValues": [
                 {
@@ -303,8 +303,8 @@
         {
             "atomType": "Constant",
             "name": "MatThick",
-            "x": 0.05847953216374269,
-            "y": 0.14712153518123666,
+            "x": 0.0346378767431399,
+            "y": 0.17697228144989338,
             "uniqueID": 1748636407559,
             "ioValues": [],
             "description": "Defines a mathematical constant.",
@@ -313,8 +313,8 @@
         {
             "atomType": "Rotate",
             "name": "Rotate",
-            "x": 0.20107962213225372,
-            "y": 0.48614072494669514,
+            "x": 0.20197930724246513,
+            "y": 0.4349680170575693,
             "uniqueID": 1748636566461,
             "ioValues": [
                 {
@@ -335,6 +335,30 @@
                 }
             ],
             "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+        },
+        {
+            "atomType": "Constant",
+            "name": "BoltDiameter",
+            "x": 0.02968960863697706,
+            "y": 0.7633262260127931,
+            "uniqueID": 1748637132232,
+            "ioValues": [],
+            "description": "Defines a mathematical constant.",
+            "value": 0.375
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.4763832658569501,
+            "y": 0.2345415778251599,
+            "uniqueID": 1748637204759,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Creates a new circle."
         }
     ],
     "allConnectors": [
@@ -470,6 +494,20 @@
             "ap2Primary": true,
             "ap1ID": 1748636566461,
             "ap2ID": 1748636382269
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "diameter",
+            "ap2Primary": false,
+            "ap1ID": 1748637132232,
+            "ap2ID": 1748622204947
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "diameter",
+            "ap2Primary": false,
+            "ap1ID": 1748637132232,
+            "ap2ID": 1748622656735
         }
     ],
     "unitsKey": "Inches",
