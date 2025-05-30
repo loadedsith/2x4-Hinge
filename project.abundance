@@ -148,9 +148,9 @@
         },
         {
             "atomType": "Equation",
-            "name": "x + y/2",
-            "x": 0.1542674577818348,
-            "y": 0.44540727902946275,
+            "name": "x - y",
+            "x": 0.15928799634869922,
+            "y": 0.4696707105719238,
             "uniqueID": 1748637899544,
             "ioValues": [
                 {
@@ -163,7 +163,7 @@
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "x + y/2"
+            "currentEquation": "x - y"
         },
         {
             "atomType": "Move",
@@ -178,11 +178,11 @@
                 },
                 {
                     "name": "xDist",
-                    "ioValue": 3.6875
+                    "ioValue": 3.125
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 8.1875
+                    "ioValue": 7.625
                 },
                 {
                     "name": "zDist",
@@ -193,7 +193,7 @@
         },
         {
             "atomType": "Equation",
-            "name": "x + y/2",
+            "name": "x - y",
             "x": 0.1474212688270196,
             "y": 0.28596187175043325,
             "uniqueID": 1748638420025,
@@ -208,7 +208,7 @@
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "x + y/2"
+            "currentEquation": "x - y"
         },
         {
             "atomType": "Move",
@@ -223,7 +223,7 @@
                 },
                 {
                     "name": "xDist",
-                    "ioValue": 3.6875
+                    "ioValue": 3.125
                 },
                 {
                     "name": "yDist",
@@ -253,7 +253,7 @@
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 8.1875
+                    "ioValue": 7.625
                 },
                 {
                     "name": "zDist",
@@ -265,14 +265,10 @@
         {
             "atomType": "ShrinkWrap",
             "name": "Shrink Wrap",
-            "x": 0.47877681424007307,
-            "y": 0.21317157712305024,
+            "x": 0.4637151985394797,
+            "y": 0.18890814558058924,
             "uniqueID": 1748638540180,
             "ioValues": [
-                {
-                    "name": "Shape 1",
-                    "ioValue": 1748637531319
-                },
                 {
                     "name": "Shape 2",
                     "ioValue": 1748638294714
@@ -288,10 +284,6 @@
                 {
                     "name": "Shape 5",
                     "ioValue": ""
-                },
-                {
-                    "name": "Shape 1",
-                    "ioValue": 1748637531319
                 },
                 {
                     "name": "Shape 2",
@@ -333,8 +325,8 @@
         {
             "atomType": "Molecule",
             "name": "BoltHole",
-            "x": 0.46919214970333184,
-            "y": 0.8058925476603119,
+            "x": 0.463258785942492,
+            "y": 0.8249566724436742,
             "uniqueID": 1748638720553,
             "ioValues": [
                 {
@@ -343,11 +335,11 @@
                 },
                 {
                     "name": "X",
-                    "ioValue": 2
+                    "ioValue": 1.75
                 },
                 {
                     "name": "Y",
-                    "ioValue": 0
+                    "ioValue": 2.65
                 },
                 {
                     "name": "Z",
@@ -423,11 +415,11 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 2
+                            "ioValue": 1.75
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 0
+                            "ioValue": 2.65
                         },
                         {
                             "name": "zDist",
@@ -545,6 +537,47 @@
             ],
             "fileTypeVersion": 1,
             "compiledBom": []
+        },
+        {
+            "atomType": "Equation",
+            "name": "x / 2",
+            "x": 0.26563213144682796,
+            "y": 0.826689774696707,
+            "uniqueID": 1748639266098,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 3.5
+                }
+            ],
+            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+            "currentEquation": "x / 2"
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.4783204016430853,
+            "y": 0.5285961871750433,
+            "uniqueID": 1748639460473,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1748637531319
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0.375
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0.375
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
         }
     ],
     "allConnectors": [
@@ -592,10 +625,31 @@
         },
         {
             "ap1Name": "number",
+            "ap2Name": "xDist",
+            "ap2Primary": false,
+            "ap1ID": 1748637132232,
+            "ap2ID": 1748639460473
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "yDist",
+            "ap2Primary": false,
+            "ap1ID": 1748637132232,
+            "ap2ID": 1748639460473
+        },
+        {
+            "ap1Name": "number",
             "ap2Name": "x",
             "ap2Primary": false,
             "ap1ID": 1748637386320,
             "ap2ID": 1748637899544
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": 1748637386320,
+            "ap2ID": 1748639266098
         },
         {
             "ap1Name": "number",
@@ -648,10 +702,10 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "Shape 1",
-            "ap2Primary": false,
+            "ap2Name": "geometry",
+            "ap2Primary": true,
             "ap1ID": 1748637531319,
-            "ap2ID": 1748638540180
+            "ap2ID": 1748639460473
         },
         {
             "ap1Name": "geometry",
@@ -729,6 +783,13 @@
             "ap2Primary": false,
             "ap1ID": 1748638720553,
             "ap2ID": 1748622525983
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "X",
+            "ap2Primary": false,
+            "ap1ID": 1748639266098,
+            "ap2ID": 1748638720553
         }
     ],
     "unitsKey": "Inches",
