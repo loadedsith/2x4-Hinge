@@ -1230,6 +1230,36 @@
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Export",
+      "x": 0.8925438596491229,
+      "y": 0.7527593818984548,
+      "uniqueID": "id-1",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "File Type",
+          "ioValue": "STL",
+          "currentEquation": "STL"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "2x4-Hinge",
+          "currentEquation": "2x4-Hinge"
+        }
+      ],
+      "type": "STL",
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "2x4-Hinge"
     }
   ],
   "allConnectors": [
@@ -1237,6 +1267,11 @@
       "ap2Name": "number or geometry",
       "ap1ID": 1748622525983,
       "ap2ID": 1748621927066
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": 1748622525983,
+      "ap2ID": "id-1"
     },
     {
       "ap2Name": "height",
