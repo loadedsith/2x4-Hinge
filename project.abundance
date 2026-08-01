@@ -319,7 +319,7 @@
         },
         {
           "name": "Shape 8",
-          "ioValue": ""
+          "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
     },
